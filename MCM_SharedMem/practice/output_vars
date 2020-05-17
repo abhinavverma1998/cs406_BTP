@@ -1,0 +1,58 @@
+Dump of assembler code for function Box::Box(int, ...):
+   0x00000000004007ce <+0>:	push   rbp
+   0x00000000004007cf <+1>:	mov    rbp,rsp
+   0x00000000004007d2 <+4>:	sub    rsp,0x64
+   0x00000000004007d6 <+8>:	mov    QWORD PTR [rbp-0xd8],rdi
+   0x00000000004007dd <+15>:	mov    QWORD PTR [rbp-0xa0],rdx
+   0x00000000004007e4 <+22>:	mov    QWORD PTR [rbp-0x98],rcx
+   0x00000000004007eb <+29>:	mov    QWORD PTR [rbp-0x90],r8
+   0x00000000004007f2 <+36>:	mov    QWORD PTR [rbp-0x88],r9
+   0x00000000004007f9 <+43>:	test   al,al
+   0x00000000004007fb <+45>:	je     0x40081d <Box::Box(int, ...)+79>
+   0x00000000004007fd <+47>:	movaps XMMWORD PTR [rbp-0x80],xmm0
+   0x0000000000400801 <+51>:	movaps XMMWORD PTR [rbp-0x70],xmm1
+   0x0000000000400805 <+55>:	movaps XMMWORD PTR [rbp-0x60],xmm2
+   0x0000000000400809 <+59>:	movaps XMMWORD PTR [rbp-0x50],xmm3
+   0x000000000040080d <+63>:	movaps XMMWORD PTR [rbp-0x40],xmm4
+   0x0000000000400811 <+67>:	movaps XMMWORD PTR [rbp-0x30],xmm5
+   0x0000000000400815 <+71>:	movaps XMMWORD PTR [rbp-0x20],xmm6
+   0x0000000000400819 <+75>:	movaps XMMWORD PTR [rbp-0x10],xmm7
+   0x000000000040081d <+79>:	mov    DWORD PTR [rbp-0xdc],esi
+=> 0x0000000000400823 <+85>:	mov    rax,QWORD PTR [rbp-0xd8]
+   0x000000000040082a <+92>:	mov    edx,DWORD PTR [rbp-0xdc]
+   0x0000000000400830 <+98>:	mov    DWORD PTR [rax],edx
+   0x0000000000400832 <+100>:	mov    DWORD PTR [rbp-0xc8],0x10
+   0x000000000040083c <+110>:	mov    DWORD PTR [rbp-0xc4],0x30
+   0x0000000000400846 <+120>:	lea    rax,[rbp+0x10]
+   0x000000000040084a <+124>:	mov    QWORD PTR [rbp-0xc0],rax
+   0x0000000000400851 <+131>:	lea    rax,[rbp-0xb0]
+   0x0000000000400858 <+138>:	mov    QWORD PTR [rbp-0xb8],rax
+   0x000000000040085f <+145>:	mov    DWORD PTR [rbp-0xcc],0x1
+   0x0000000000400869 <+155>:	jmp    0x4008ca <Box::Box(int, ...)+252>
+   0x000000000040086b <+157>:	mov    eax,DWORD PTR [rbp-0xc8]
+   0x0000000000400871 <+163>:	cmp    eax,0x30
+   0x0000000000400874 <+166>:	jae    0x400899 <Box::Box(int, ...)+203>
+   0x0000000000400876 <+168>:	mov    rdx,QWORD PTR [rbp-0xb8]
+   0x000000000040087d <+175>:	mov    eax,DWORD PTR [rbp-0xc8]
+   0x0000000000400883 <+181>:	mov    eax,eax
+   0x0000000000400885 <+183>:	add    rax,rdx
+   0x0000000000400888 <+186>:	mov    edx,DWORD PTR [rbp-0xc8]
+   0x000000000040088e <+192>:	add    edx,0x8
+   0x0000000000400891 <+195>:	mov    DWORD PTR [rbp-0xc8],edx
+   0x0000000000400897 <+201>:	jmp    0x4008ae <Box::Box(int, ...)+224>
+   0x0000000000400899 <+203>:	mov    rdx,QWORD PTR [rbp-0xc0]
+   0x00000000004008a0 <+210>:	mov    rax,rdx
+   0x00000000004008a3 <+213>:	add    rdx,0x8
+   0x00000000004008a7 <+217>:	mov    QWORD PTR [rbp-0xc0],rdx
+   0x00000000004008ae <+224>:	mov    ecx,DWORD PTR [rax]
+   0x00000000004008b0 <+226>:	mov    rax,QWORD PTR [rbp-0xd8]
+   0x00000000004008b7 <+233>:	mov    edx,DWORD PTR [rbp-0xcc]
+   0x00000000004008bd <+239>:	movsxd rdx,edx
+   0x00000000004008c0 <+242>:	mov    DWORD PTR [rax+rdx*4],ecx
+   0x00000000004008c3 <+245>:	add    DWORD PTR [rbp-0xcc],0x1
+   0x00000000004008ca <+252>:	cmp    DWORD PTR [rbp-0xcc],0x3
+   0x00000000004008d1 <+259>:	jle    0x40086b <Box::Box(int, ...)+157>
+   0x00000000004008d3 <+261>:	leave
+   0x00000000004008d4 <+262>:	ret
+End of assembler dump.
+

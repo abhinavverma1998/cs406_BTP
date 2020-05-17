@@ -1,0 +1,25 @@
+gdb-peda$ disassemble Box::Box(int, int, int, int) 
+Dump of assembler code for function Box::Box(int, int, int, int):
+   0x00000000004007c4 <+0>:	push   rbp
+   0x00000000004007c5 <+1>:	mov    rbp,rsp
+   0x00000000004007c8 <+4>:	mov    QWORD PTR [rbp-0x8],rdi
+   0x00000000004007cc <+8>:	mov    DWORD PTR [rbp-0xc],esi
+   0x00000000004007cf <+11>:	mov    DWORD PTR [rbp-0x10],edx
+   0x00000000004007d2 <+14>:	mov    DWORD PTR [rbp-0x14],ecx
+   0x00000000004007d5 <+17>:	mov    DWORD PTR [rbp-0x18],r8d
+=> 0x00000000004007d9 <+21>:	mov    rax,QWORD PTR [rbp-0x8]
+   0x00000000004007dd <+25>:	mov    edx,DWORD PTR [rbp-0xc]
+   0x00000000004007e0 <+28>:	mov    DWORD PTR [rax],edx
+   0x00000000004007e2 <+30>:	mov    rax,QWORD PTR [rbp-0x8]
+   0x00000000004007e6 <+34>:	mov    edx,DWORD PTR [rbp-0x10]
+   0x00000000004007e9 <+37>:	mov    DWORD PTR [rax+0x4],edx
+   0x00000000004007ec <+40>:	mov    rax,QWORD PTR [rbp-0x8]
+   0x00000000004007f0 <+44>:	mov    edx,DWORD PTR [rbp-0x14]
+   0x00000000004007f3 <+47>:	mov    DWORD PTR [rax+0x8],edx
+   0x00000000004007f6 <+50>:	mov    rax,QWORD PTR [rbp-0x8]
+   0x00000000004007fa <+54>:	mov    edx,DWORD PTR [rbp-0x18]
+   0x00000000004007fd <+57>:	mov    DWORD PTR [rax+0xc],edx
+   0x0000000000400800 <+60>:	pop    rbp
+   0x0000000000400801 <+61>:	ret    
+End of assembler dump.
+

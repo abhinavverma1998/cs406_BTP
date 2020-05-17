@@ -1,0 +1,2 @@
+Breakpoint 1 at 0x400823: file GlobalTypes.h, line 60.
+Starting program: /home/parallels/8th_sem/BTP/MCM_SharedMem/practice/a.out 
