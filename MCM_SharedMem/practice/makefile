@@ -1,11 +1,11 @@
 APP=MCM
 
 fixed:
-	g++ -g -std=c++0x program_with_fixed.cpp -o fixed.out
+	g++-4.4 -g -std=c++0x program_with_fixed.cpp -o fixed.o
 
 varg:
-	g++ -g -std=c++0x program_with_varg.cpp -o varg.out 
+	g++-4.4 -g -std=c++0x program_with_varg.cpp -o varg.o 
 
 clean:
-	rm -f fixed.out
-	rm -f varg.out
+	rm -f fixed.o
+	rm -f varg.o

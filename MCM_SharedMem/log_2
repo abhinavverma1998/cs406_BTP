@@ -1,0 +1,109 @@
+
+GCC version :  g++-4.8  Input size :  1025  Type :  fixed
+rm -f MCM
+echo g++-4.8 -g -std=c++0x
+g++-4.8 -g -std=c++0x
+g++-4.8 -g -std=c++0x -O0 -I/home/abhinav/CS406/BTP/MCM_SharedMem/common -I/home/abhinav/CS406/BTP/MCM_SharedMem/MCM -o /home/abhinav/CS406/BTP/MCM_SharedMem/MCM RecursiveFunctions.cpp MCM_Aux.cpp HelperFunctions.cpp main.cpp
+Optimum cost:2749250
+Preprocess time: 0.002926 seconds
+Task completion time: 45.744026 seconds
+
+GCC version :  g++-4.8  Input size :  1025  Type :  var
+rm -f MCM
+echo g++-4.8 -g -std=c++0x
+g++-4.8 -g -std=c++0x
+g++-4.8 -g -std=c++0x -O0 -I/home/abhinav/CS406/BTP/MCM_SharedMem/common -I/home/abhinav/CS406/BTP/MCM_SharedMem/MCM -o /home/abhinav/CS406/BTP/MCM_SharedMem/MCM RecursiveFunctions.cpp MCM_Aux.cpp HelperFunctions.cpp main.cpp
+Optimum cost:2749250
+Preprocess time: 0.003082 seconds
+Task completion time: 61.363445 seconds
+
+GCC version :  g++-4.8  Input size :  1025  Type :  fixed
+rm -f MCM
+echo g++-4.8 -g -std=c++0x
+g++-4.8 -g -std=c++0x
+g++-4.8 -g -std=c++0x -O1 -I/home/abhinav/CS406/BTP/MCM_SharedMem/common -I/home/abhinav/CS406/BTP/MCM_SharedMem/MCM -o /home/abhinav/CS406/BTP/MCM_SharedMem/MCM RecursiveFunctions.cpp MCM_Aux.cpp HelperFunctions.cpp main.cpp
+Optimum cost:2749250
+Preprocess time: 0.002069 seconds
+Task completion time: 11.382497 seconds
+
+GCC version :  g++-4.8  Input size :  1025  Type :  var
+rm -f MCM
+echo g++-4.8 -g -std=c++0x
+g++-4.8 -g -std=c++0x
+g++-4.8 -g -std=c++0x -O1 -I/home/abhinav/CS406/BTP/MCM_SharedMem/common -I/home/abhinav/CS406/BTP/MCM_SharedMem/MCM -o /home/abhinav/CS406/BTP/MCM_SharedMem/MCM RecursiveFunctions.cpp MCM_Aux.cpp HelperFunctions.cpp main.cpp
+Optimum cost:2749250
+Preprocess time: 0.001789 seconds
+Task completion time: 23.361864 seconds
+
+GCC version :  g++-4.8  Input size :  1025  Type :  fixed
+rm -f MCM
+echo g++-4.8 -g -std=c++0x
+g++-4.8 -g -std=c++0x
+g++-4.8 -g -std=c++0x -O2 -I/home/abhinav/CS406/BTP/MCM_SharedMem/common -I/home/abhinav/CS406/BTP/MCM_SharedMem/MCM -o /home/abhinav/CS406/BTP/MCM_SharedMem/MCM RecursiveFunctions.cpp MCM_Aux.cpp HelperFunctions.cpp main.cpp
+Optimum cost:2749250
+Preprocess time: 0.002051 seconds
+Task completion time: 11.752808 seconds
+
+GCC version :  g++-4.8  Input size :  1025  Type :  var
+rm -f MCM
+echo g++-4.8 -g -std=c++0x
+g++-4.8 -g -std=c++0x
+g++-4.8 -g -std=c++0x -O2 -I/home/abhinav/CS406/BTP/MCM_SharedMem/common -I/home/abhinav/CS406/BTP/MCM_SharedMem/MCM -o /home/abhinav/CS406/BTP/MCM_SharedMem/MCM RecursiveFunctions.cpp MCM_Aux.cpp HelperFunctions.cpp main.cpp
+Optimum cost:2749250
+Preprocess time: 0.001812 seconds
+Task completion time: 23.863707 seconds
+
+GCC version :  g++-4.8  Input size :  1025  Type :  fixed
+rm -f MCM
+echo g++-4.8 -g -std=c++0x
+g++-4.8 -g -std=c++0x
+g++-4.8 -g -std=c++0x -O3 -I/home/abhinav/CS406/BTP/MCM_SharedMem/common -I/home/abhinav/CS406/BTP/MCM_SharedMem/MCM -o /home/abhinav/CS406/BTP/MCM_SharedMem/MCM RecursiveFunctions.cpp MCM_Aux.cpp HelperFunctions.cpp main.cpp
+Optimum cost:2749250
+Preprocess time: 0.001769 seconds
+Task completion time: 11.487278 seconds
+
+GCC version :  g++-4.8  Input size :  1025  Type :  var
+rm -f MCM
+echo g++-4.8 -g -std=c++0x
+g++-4.8 -g -std=c++0x
+g++-4.8 -g -std=c++0x -O3 -I/home/abhinav/CS406/BTP/MCM_SharedMem/common -I/home/abhinav/CS406/BTP/MCM_SharedMem/MCM -o /home/abhinav/CS406/BTP/MCM_SharedMem/MCM RecursiveFunctions.cpp MCM_Aux.cpp HelperFunctions.cpp main.cpp
+Optimum cost:2749250
+Preprocess time: 0.001814 seconds
+Task completion time: 18.853031 seconds
+
+GCC version :  g++-4.8  Input size :  1025  Type :  fixed
+rm -f MCM
+echo g++-4.8 -g -std=c++0x
+g++-4.8 -g -std=c++0x
+g++-4.8 -g -std=c++0x -Os -I/home/abhinav/CS406/BTP/MCM_SharedMem/common -I/home/abhinav/CS406/BTP/MCM_SharedMem/MCM -o /home/abhinav/CS406/BTP/MCM_SharedMem/MCM RecursiveFunctions.cpp MCM_Aux.cpp HelperFunctions.cpp main.cpp
+Optimum cost:2749250
+Preprocess time: 0.001768 seconds
+Task completion time: 16.493500 seconds
+
+GCC version :  g++-4.8  Input size :  1025  Type :  var
+rm -f MCM
+echo g++-4.8 -g -std=c++0x
+g++-4.8 -g -std=c++0x
+g++-4.8 -g -std=c++0x -Os -I/home/abhinav/CS406/BTP/MCM_SharedMem/common -I/home/abhinav/CS406/BTP/MCM_SharedMem/MCM -o /home/abhinav/CS406/BTP/MCM_SharedMem/MCM RecursiveFunctions.cpp MCM_Aux.cpp HelperFunctions.cpp main.cpp
+Optimum cost:2749250
+Preprocess time: 0.001769 seconds
+Task completion time: 33.234718 seconds
+
+GCC version :  g++-4.8  Input size :  1025  Type :  fixed
+rm -f MCM
+echo g++-4.8 -g -std=c++0x
+g++-4.8 -g -std=c++0x
+g++-4.8 -g -std=c++0x -Ofast -I/home/abhinav/CS406/BTP/MCM_SharedMem/common -I/home/abhinav/CS406/BTP/MCM_SharedMem/MCM -o /home/abhinav/CS406/BTP/MCM_SharedMem/MCM RecursiveFunctions.cpp MCM_Aux.cpp HelperFunctions.cpp main.cpp
+Optimum cost:2749250
+Preprocess time: 0.001787 seconds
+Task completion time: 11.723406 seconds
+
+GCC version :  g++-4.8  Input size :  1025  Type :  var
+rm -f MCM
+echo g++-4.8 -g -std=c++0x
+g++-4.8 -g -std=c++0x
+g++-4.8 -g -std=c++0x -Ofast -I/home/abhinav/CS406/BTP/MCM_SharedMem/common -I/home/abhinav/CS406/BTP/MCM_SharedMem/MCM -o /home/abhinav/CS406/BTP/MCM_SharedMem/MCM RecursiveFunctions.cpp MCM_Aux.cpp HelperFunctions.cpp main.cpp
+Optimum cost:2749250
+Preprocess time: 0.001775 seconds
+Task completion time: 19.348492 seconds
+

@@ -309,8 +309,8 @@ void GetTaskList()
 			numLocalTiles++;
 		fnIter++;
 	}
-	printf("%d: Number of tiles owned:%d\n",procRank,numLocalTiles);
-			printf("Total number of leaves:%d tasks:%d\n",numLeaves,numLocalTiles);
+	/*printf("%d: Number of tiles owned:%d\n",procRank,numLocalTiles);
+			printf("Total number of leaves:%d tasks:%d\n",numLeaves,numLocalTiles);*/
 
 	//for visualizing the data partitioning scheme
 	/*int* rankTileMapping = new int[tilesPerRowDPTable*tilesPerRowDPTable];

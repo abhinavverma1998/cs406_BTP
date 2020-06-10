@@ -1,0 +1,55 @@
+rm -f fixed.o
+rm -f varg.o
+g++-4.4 -g -std=c++0x program_with_fixed.cpp -o fixed.o
+g++-4.4 -g -std=c++0x program_with_varg.cpp -o varg.o 
+stack_depth : 10000
+fixed fun() took 0.000400 seconds to execute in recursive
+fixed fun() took 0.000785 seconds to execute in iterative
+stack_depth : 10000
+varg fun() took 0.000564 seconds to execute in recursive
+varg fun() took 0.001996 seconds to execute in iterative
+
+rm -f fixed.o
+rm -f varg.o
+g++-4.4 -g -std=c++0x program_with_fixed.cpp -o fixed.o
+g++-4.4 -g -std=c++0x program_with_varg.cpp -o varg.o 
+stack_depth : 50000
+fixed fun() took 0.001512 seconds to execute in recursive
+fixed fun() took 0.000578 seconds to execute in iterative
+stack_depth : 50000
+varg fun() took 0.002925 seconds to execute in recursive
+varg fun() took 0.001874 seconds to execute in iterative
+
+rm -f fixed.o
+rm -f varg.o
+g++-4.4 -g -std=c++0x program_with_fixed.cpp -o fixed.o
+g++-4.4 -g -std=c++0x program_with_varg.cpp -o varg.o 
+stack_depth : 80000
+fixed fun() took 0.003086 seconds to execute in recursive
+fixed fun() took 0.000569 seconds to execute in iterative
+stack_depth : 80000
+varg fun() took 0.003869 seconds to execute in recursive
+varg fun() took 0.001566 seconds to execute in iterative
+
+rm -f fixed.o
+rm -f varg.o
+g++-4.4 -g -std=c++0x program_with_fixed.cpp -o fixed.o
+g++-4.4 -g -std=c++0x program_with_varg.cpp -o varg.o 
+stack_depth : 100000
+fixed fun() took 0.003562 seconds to execute in recursive
+fixed fun() took 0.000593 seconds to execute in iterative
+stack_depth : 100000
+varg fun() took 0.005151 seconds to execute in recursive
+varg fun() took 0.001641 seconds to execute in iterative
+
+rm -f fixed.o
+rm -f varg.o
+g++-4.4 -g -std=c++0x program_with_fixed.cpp -o fixed.o
+g++-4.4 -g -std=c++0x program_with_varg.cpp -o varg.o 
+stack_depth : 130000
+fixed fun() took 0.004710 seconds to execute in recursive
+fixed fun() took 0.000565 seconds to execute in iterative
+stack_depth : 130000
+varg fun() took 0.006343 seconds to execute in recursive
+varg fun() took 0.001503 seconds to execute in iterative
+

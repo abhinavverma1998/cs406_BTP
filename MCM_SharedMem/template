@@ -1,37 +1,30 @@
-#pragma once
-#include<vector>
-#include<string>
-#include<sstream>
-#define DIMENSION 2
-#define METADATASPACE (2*DIMENSION+1)
-typedef int CELL_TYPE;
-extern int fnCallHierarchySummary[3][3];
-inline CELL_TYPE* GetDPTableCell(int i, int j, CELL_TYPE* data)
-{
-	CELL_TYPE* cell = data+METADATASPACE;
-	int side = data[DIMENSION];
-	int iOffset=i - data[1];
-	cell += (iOffset*1* side);
-	int jOffset=j - data[0];
-	cell += jOffset;
-	return cell;
-}
-
-
-typedef struct Box
+/*typedef struct Box
 {
 	int  coords[DIMENSION*2]; //topleft and bottom right (x and y coordinates)
-	Box(int coord0...)
-	{
-		va_list argList;
-		coords[0]=coord0;
-		va_start(argList,coord0);
-		for(int argNum=1;argNum<2*DIMENSION;argNum++)
-			coords[argNum]=va_arg(argList,int); 
-		va_end(argList);
-	}
+	std::vector<std::string> arguments;		
+	template<typename T, typename... Args>
+
+    Box(const T t, const Args&... args)
+    {
+        arguments.push_back(t);
+        int dummy[] = { 0, (arguments.push_back(args), 0)...}; // all magic is here
+        (void) dummy; // Avoid unused variable warning.
+
+		for (int i=0; i < arguments.size(); i++) {
+            coords[i] = arguments[i];
+        }
+    }
+	// Box(int coord0...)
+	// {
+	// 	va_list argList;
+	// 	coords[0]=coord0;
+	// 	va_start(argList,coord0);
+	// 	for(int argNum=1;argNum<2*DIMENSION;argNum++)
+	// 		coords[argNum]=va_arg(argList,int);
+	// 	va_end(argList);
+	// }
 	Box(){}
-	void PrintStr(char *str)const 
+	void PrintStr(char *str)const
 	{
 		std::ostringstream ostrstrm;
 		for(int i=0;i<2*DIMENSION;i++)
@@ -74,9 +67,7 @@ typedef struct Box
 		for(int i=0;i<DIMENSION;i++)
 		{
 			len *= (coords[i+DIMENSION]-coords[i]+1);
-		}	
+		}
 		return len;
 	}
-}Box;
-
-extern std::vector<int> matrixChain;
+}Box;*/

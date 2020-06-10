@@ -1,4 +1,4 @@
-CPP = g++ -g -std=c++0x
+CPP = $(GCC) -g -std=c++0x
 D2P = $(PWD)
 APP = MCM
 
@@ -11,13 +11,13 @@ INCLUDES+=-I$(D2P)/common -I$(D2P)/$(APP)
 CFLAGS+= -gdwarf-2 -DDEBUG
 else
 INCLUDES+=-I$(D2P)/common -I$(D2P)/$(APP)
-# CFLAGS += -O3
+CFLAGS += -$(OPT)
 endif
 
-
 $(D2P)/$(APP):./RecursiveFunctions.cpp ./$(APP)_Aux.cpp ./HelperFunctions.cpp ./main.cpp
+	echo $(CPP)
 	$(CPP) $(CFLAGS) $(INCLUDES) -o $@ $^
 
 clean:
-	rm $(APP)
+	rm -f $(APP)
 	

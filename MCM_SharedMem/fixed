@@ -1,0 +1,53 @@
+#pragma once
+#include<vector>
+#include<string>
+#include<sstream>
+#define DIMENSION 2
+#define METADATASPACE (2*DIMENSION+1)
+typedef int CELL_TYPE;
+extern int fnCallHierarchySummary[3][3];
+inline CELL_TYPE* GetDPTableCell(int i, int j, CELL_TYPE* data)
+{
+	CELL_TYPE* cell = data+METADATASPACE;
+	int side = data[DIMENSION];
+	int iOffset=i - data[1];
+	cell += (iOffset*1* side);
+	int jOffset=j - data[0];
+	cell += jOffset;
+	return cell;
+}
+
+typedef struct Box
+{	int coords[4];
+	Box(){}
+	Box(int a, int b, int c, int d)
+	{
+		coords[0]=a;coords[1]=b;coords[2]=c;coords[3]=d;
+	}
+	Box(const Box&b)
+	{
+		coords[0]=b.coords[0];coords[1]=b.coords[1];coords[2]=b.coords[2];coords[3]=b.coords[3];
+	}
+	bool operator==(const Box& rhs)
+	{
+		bool flag = true;
+		if((this->coords[0]!=rhs.coords[0]) || (this->coords[1]!=rhs.coords[1]) || (this->coords[2]!=rhs.coords[2]) || (this->coords[3]!=rhs.coords[3]))
+			flag=false;
+		return flag;
+	}
+	long int GetBoxSize()
+	{
+		long int len = 1;
+		for(int i=0;i<DIMENSION;i++)
+		{
+			len *= (coords[i+DIMENSION]-coords[i]+1);
+		}
+		return len;
+	}
+	char* PrintStr(char *str)const
+	{
+		sprintf(str,"%d%d%d%d",coords[0],coords[1],coords[2],coords[3]);
+	}
+}Box; 
+
+extern std::vector<int> matrixChain;

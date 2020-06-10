@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include <time.h> 
 #include<vector>
 #include<set>
 #include<iostream>
@@ -139,19 +140,35 @@ typedef struct Box
 
 using namespace std;
 
-int getNearestDepth(Box* b) {
+int getNearestDepth(Box b) {
     // Simple recursive function
-    if (b->coords[3] <= 0) {
+    if (b.coords[3] <= 0) {
         return 0;
     }
-    Box *b_new = new Box(0, 0, b->coords[2]/2, b->coords[3]/2);
+    Box b_new(0, 0, b.coords[2]-1, b.coords[3]-1);
 
-    return (1 + getNearestDepth(b_new));
+    getNearestDepth(b_new);
 }
 
-int main() {
-    cout<<"Hello, entering this program\n";
-    Box* b = new Box(0, 0, 256, 256);
+int main(int argc, char* argv[]) {
+    int stack_depth = atoi(argv[1]);
+    cout << "stack_depth : " << stack_depth << endl;
+    clock_t t; 
+    t = clock(); 
+    Box b(0, 0, stack_depth, stack_depth);
     int depth = getNearestDepth(b);
+    t = clock() - t;    
+    double time_taken = ((double)t)/CLOCKS_PER_SEC; // in seconds 
+    printf("fixed fun() took %f seconds to execute in recursive\n", time_taken); 
+
+    t = clock();
+    for(int i=0; i<130000; i++)
+    {
+        Box b(0, 0, i, i);
+    }
+    t = clock() - t;
+    time_taken = ((double)t)/CLOCKS_PER_SEC; // in seconds 
+    printf("fixed fun() took %f seconds to execute in iterative\n", time_taken); 
+
 	return 0;
 }
